@@ -34,8 +34,9 @@ public class WhileGaji27 {
                 gajiLembur = jumlahJamLembur * 75000;
             }
             totalGajiLembur += gajiLembur;
-            
+          i++;   
         }
         System.out.println("Total gaji lembur: " + totalGajiLembur);
+      
     }
 }
