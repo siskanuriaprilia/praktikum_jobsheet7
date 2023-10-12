@@ -14,7 +14,11 @@ public class DoWhileCuti27 {
         do{
             System.out.println("apakah anda ingin mengambil cuti (y/t)? ");
             konfirmasi = sc.next();
-
+             if(konfirmasi.equalsIgnoreCase("t")){
+                 System.out.println("Semangat bekerja,terima kasih untuk anda yang tidak mengambil cuti");
+                 break;
+             }
+                
             if(konfirmasi.equalsIgnoreCase("y")){
                 System.out.print("Jumlah hari: ");
                 jumlahHari = sc.nextInt();
@@ -24,12 +28,14 @@ public class DoWhileCuti27 {
                    System.out.println("Sisa jatah cuti: " + jatahCuti);
                 }else
                 {
-                   System.out.println("Sisa jatah cuti anda tidak mencukupi");
-                   break;               
+                   System.out.println("Sisa jatah cuti anda tidak mencukupi, harap isi kembali jumlah hari yang sesuai dengan data jatah sisa cuti ");
+                   continue;
 
-                }         
-            } 
-        } while (jatahCuti > 0);
+                }  
+
+            } else
+            {  
+            }        } while (jatahCuti > 0);
     }
  }   
  
